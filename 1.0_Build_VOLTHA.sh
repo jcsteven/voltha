@@ -7,7 +7,6 @@
 #   When use: './<this script file>  '
 # -------------------------------------------------------
 TODAY=`date +"%Y-%m%d-%H%M"`
-:${PPWW:=`pwd`}
 BLOG_DIR="Build-log"
 BLOG_DIR_WK=${HOME}/${BLOG_DIR}
 Record_File=${BLOG_DIR_WK}/voltha-b1.4.0-log.txt
@@ -22,9 +21,9 @@ echo "Start:ASFVOLT16-Build-VOLTHA:${TODAY}" | tee -a $Record_File
 
 #cd ${VOLTHA_DIR}
 . env.sh
-REPOSITORY=voltha/  make fetch
-REPOSITORY=voltha/  make install-protoc
-REPOSITORY=voltha/  make build
+make fetch
+make install-protoc
+make build
 #cd  ${PPWW}
   
 e_time=$(date +%s)
