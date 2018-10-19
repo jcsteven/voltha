@@ -21,9 +21,9 @@ echo "Start:ASFVOLT16-Build-VOLTHA:${TODAY}" | tee -a $Record_File
 
 #cd ${VOLTHA_DIR}
 . env.sh
-make fetch
-make install-protoc
-make build
+REPOSITORY=voltha/  make fetch
+REPOSITORY=voltha/  make install-protoc
+REPOSITORY=voltha/  make build
 #cd  ${PPWW}
   
 e_time=$(date +%s)
