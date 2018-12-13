@@ -37,7 +37,8 @@ EAP_ETH_TYPE = 0x888e
 LLDP_ETH_TYPE = 0x88cc
 
 # FIXME - see also BRDCM_DEFAULT_VLAN in broadcom_onu.py
-DEFAULT_MGMT_VLAN = 4091
+#DEFAULT_MGMT_VLAN = 4091
+DEFAULT_MGMT_VLAN = 20
 
 # Openolt Flow
 UPSTREAM = 'upstream'

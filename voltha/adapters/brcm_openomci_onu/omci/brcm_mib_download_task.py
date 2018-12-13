@@ -57,7 +57,8 @@ class BrcmMibDownloadTask(Task):
     task_priority = Task.DEFAULT_PRIORITY + 10
     default_tpid = 0x8100
     default_gem_payload = 48
-    BRDCM_DEFAULT_VLAN = 4091
+    #BRDCM_DEFAULT_VLAN = 4091
+    BRDCM_DEFAULT_VLAN = 20
 
     name = "Broadcom MIB Download Example Task"
 
